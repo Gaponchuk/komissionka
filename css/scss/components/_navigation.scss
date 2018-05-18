@@ -1,0 +1,27 @@
+.navigation {
+	display: inline-block;
+	background-color: $nav-bg;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+	}
+
+	&__item:not(last-child) {
+		margin-right: 2.5rem;
+	}
+
+	&__link {
+		font-family: 'Gill Sans';
+		font-size: 1.7rem;
+		font-style: italic;
+		color: $nav-color;
+
+		@extend %a;
+
+		&:hover {
+			color: darken($nav-color, 10%);
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.logo {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 3rem;
+	padding: 2rem;
+	text-align: center;
+	color: #299fca;
+	background-color: #e1ecf2;
+	text-decoration: none;
+	border: 0.5rem solid #fff;
+	border-radius: 1rem;
+	transform: translateY(-20px) rotate(-5deg);
+
+	&__title {
+		display: block;
+		font-size: 3.6rem;
+		text-transform: uppercase;
+	}
+
+	&__description {
+		font-size: 1.5rem;
+	}
+}

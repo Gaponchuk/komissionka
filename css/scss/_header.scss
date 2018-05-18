@@ -1,0 +1,21 @@
+.header {
+	position: relative;
+	max-height: 100px;
+	display: flex;
+	align-items: center;
+	padding: 2rem 0;
+	padding-left: 42%;
+	border-radius: 0 0 1rem 1rem;
+	background-color: $nav-bg;
+}
+
+.first-screen {
+	min-height: 56rem;
+	background-image: url('../img/cloud.png');
+	background-repeat-y: no-repeat;
+	background-position: center bottom;
+
+	> .wrapper {
+		position: relative;
+	}
+}

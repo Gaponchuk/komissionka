@@ -1,0 +1,32 @@
+.form {
+
+	&__field {
+		font-size: 1.4rem;
+		height: 3.3rem;
+		margin-bottom: 1rem;
+		padding: 1.5rem 1.2rem;
+		color: #ffffff;
+		background-color: $form-field-bg;
+		border-style: none;
+		border-radius: 5px 5px 7px 7px;
+		box-shadow: inset 0 1px 5px 1px rgba(0, 0, 0, .25),
+					inset 0 -1px 1px 0px rgba(255, 255, 255, .5);
+
+		&::placeholder {
+			color: rgba(255, 255, 255, .3);
+		}
+
+		&--textarea {
+			min-height: 6rem;
+		}
+	}
+
+	&__submit {
+		font-size: 1.6rem;
+		font-weight: 300;
+		color: $forn-btn-color;
+		background-color: $form-btn-bg;
+
+		@extend %btn;
+	}
+}

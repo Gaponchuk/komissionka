@@ -1,0 +1,60 @@
+@import 'variables';
+@import 'mixin';
+
+@import 'header';
+@import 'components/logo';
+@import 'components/navigation';
+@import 'components/slider-control';
+@import 'content';
+@import 'components/form';
+@import 'footer';
+
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	color: $main-text-color;
+	background-color: $main-bg;
+	box-sizing: border-box;
+	font-size: 1.6rem;
+}
+
+.wrapper {
+	max-width: 1054px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.title-h1 {
+	font-size: 4.8rem;
+	color: $title-h1;
+}
+
+.title-h3 {
+	font-size: 2.2rem;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+.title-description {
+	font-size: 2.4rem;
+	margin-bottom: 3.5rem;
+	color: #6ab5d0;
+}
+
+.description-block {
+	margin-bottom: 3.5rem;
+}
