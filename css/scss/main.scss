@@ -8,6 +8,8 @@
 @import 'content';
 @import 'components/form';
 @import 'footer';
+@import 'components/social-link';
+@import 'components/contacts';
 
 
 *,
@@ -40,21 +42,34 @@ body {
 
 .title-h1 {
 	font-size: 4.8rem;
+	font-weight: 300;
 	color: $title-h1;
 }
 
 .title-h3 {
-	font-size: 2.2rem;
+	font-size: 2.5rem;
 	font-weight: 100;
 	letter-spacing: 1px;
 }
 
 .title-description {
 	font-size: 2.4rem;
+	font-weight: 300;
 	margin-bottom: 3.5rem;
 	color: #6ab5d0;
 }
 
 .description-block {
 	margin-bottom: 3.5rem;
+}
+
+.tel-link {
+	color: #fff;
+
+	@extend %a;
+
+	&:hover {
+		color: darken(#fff, 10%);
+		text-decoration: underline;
+	}
 }
