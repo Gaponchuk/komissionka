@@ -1,6 +1,8 @@
 .slider-control {
 	position: absolute;
 	top: 34rem;
+	left: 2rem;
+	z-index: 10;
 
 	&__btn {
 		width: 4.2rem;
@@ -9,5 +11,9 @@
 		border: .5rem solid #add2e5;
 		border-radius: 50%;
 		cursor: pointer;
+
+		&:first-child {
+			margin-right: 10px;
+		}
 	}
 }
