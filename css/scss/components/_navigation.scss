@@ -2,6 +2,10 @@
 	display: inline-block;
 	background-color: $nav-bg;
 
+	@media screen and (max-width: 900px) {
+		display: none;
+	}
+
 	&__list {
 		display: flex;
 		flex-wrap: wrap;

@@ -8,8 +8,8 @@
 	line-height: 3.9rem;
 	background-position: center;
 	background-repeat: no-repeat;
-	-webkit-background-size: 65%;
-	background-size: 65%;
+	-webkit-background-size: 60%;
+	background-size: 60%;
 
 	@extend %a;
 
@@ -35,10 +35,5 @@
 
 	&--instagram {
 		background-image: url("../img/icon/instagram.svg");
-	}
-
-	&--twitter,
-	&--facebook,
-	&--instagram {
 	}
 }
