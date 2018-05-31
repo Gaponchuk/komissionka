@@ -5,18 +5,51 @@
 	z-index: 10;
 
 	&__btn {
-		width: 0;
-		height: 0;
-		background-color: transparent;
-		// border: .5rem solid #add2e5;
-		// border-radius: 50%;
-		border-top: 2.2rem solid #add2e5;
-		border-right: 2.2rem solid transparent;
-		border-bottom: 2.2rem solid #add2e5;
+		position: relative;
+		width: 5rem;
+		height: 5rem;
+		background-color: $slider-btn-bg;
+		border: none;
+		border-radius: 50%;
 		cursor: pointer;
+		outline: none;
 
 		&:first-child {
-			margin-right: 10px;
+			margin-right: 1rem;
+		}
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			width: 0;
+			height: 0;
+			border-top: .8rem solid transparent;
+			border-bottom: .8rem solid transparent;
+			transform: translate(-50%, -50%);
+		}
+
+		&--left {
+			top: -3rem;
+
+			&::before {
+				border-right: 1.4rem solid #383838;
+			}
+		}
+
+		&--right {
+			&::before {
+				border-left: 1.4rem solid #383838;
+			}
+		}
+
+		&:hover,
+		&:active {
+			background-color: darken($slider-btn-bg, 10%);
+		}
+
+		&:active {
+			box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, .25)
 		}
 	}
 }

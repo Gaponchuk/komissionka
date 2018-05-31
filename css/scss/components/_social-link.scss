@@ -5,7 +5,7 @@
 	border-radius: 50%;
 	background-color: $social-link-bg;
 	text-align: center;
-	line-height: 3.9rem;
+	line-height: 4.9rem;
 	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-background-size: 60%;
@@ -25,15 +25,18 @@
 		outline: none;
 	}
 
-	&--twitter {
-		background-image: url("../img/icon/twitter.svg");	
+	svg {
+		width: 50%;
 	}
 
-	&--facebook {
-		background-image: url("../img/icon/facebook.svg");
-	}
-
+	&--twitter,
+	&--facebook,
 	&--instagram {
-		background-image: url("../img/icon/instagram.svg");
+		fill: #9bd8ee;
+		transition: all .3s ease;
+
+		&:hover {
+			fill: #ffffff;
+		}
 	}
 }

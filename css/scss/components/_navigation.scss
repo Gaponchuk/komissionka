@@ -17,15 +17,31 @@
 	}
 
 	&__link {
+		@extend %a;
+
+		position: relative;
 		font-family: 'Gill Sans';
 		font-size: 1.7rem;
 		font-style: italic;
 		color: $nav-color;
 
-		@extend %a;
+		&::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 0;
+			left: 0;
+			bottom: -2px;
+			background-color: $main-text-color;
+			transition: all .3s ease;
+		}
 
 		&:hover {
-			color: darken($nav-color, 10%);
+			color: $main-text-color;
+
+			&::after {
+				height: 3px;
+			}
 		}
 	}
 }

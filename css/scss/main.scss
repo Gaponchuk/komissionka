@@ -11,6 +11,8 @@
 @import 'components/social-link';
 @import 'components/contacts';
 @import 'components/btn-nav';
+@import 'location-info';
+@import 'components/map-block';
 
 
 *,
@@ -26,6 +28,10 @@ html {
 }
 
 body {
+	display: flex;
+	min-height: 100vh;
+	height: 100%;
+	flex-direction: column;
 	font-family: 'Myriad Pro', sans-serif;
 	font-weight: 400;
 	line-height: 1.5;
@@ -45,6 +51,20 @@ body {
 	font-size: 4.8rem;
 	font-weight: 300;
 	color: $title-h1;
+	line-height: 5rem;
+
+	@media screen and (max-width: 480px) {
+		font-size: 3.8rem;
+		line-height: 3.8rem;
+	}
+}
+
+.title-h2 {
+	font-size: 3.5rem;
+	font-weight: 100;
+	letter-spacing: 1px;
+	line-height: 4rem;
+	margin-bottom: 3rem;
 }
 
 .title-h3 {
@@ -58,6 +78,10 @@ body {
 	font-weight: 300;
 	margin-bottom: 3.5rem;
 	color: #6ab5d0;
+
+	@media screen and (max-width: 480px) {
+		font-size: 2rem;
+	}
 }
 
 .description-block {
