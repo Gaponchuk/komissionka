@@ -1,20 +1,47 @@
 .navigation {
 	display: inline-block;
 	background-color: $nav-bg;
+	transition: transform .5s ease;
 
 	@media screen and (max-width: 900px) {
-		display: none;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		top: 65px;
+		left: 0;
+		width: 100%;
+		min-height: calc(100vh - 65px);
+		// padding-top: 10vh;
+		transform: translateX(-100%);
+		z-index: 8;
 	}
 
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		list-style: none;
+
+		@media screen and (max-width: 900px) {
+			margin: auto;
+			width: 100%;
+			flex-direction: column;
+			text-align: center;
+		}
 	}
 
-	&__item:not(last-child) {
-		margin-right: 2.5rem;
+	&__item {
+
+		&:not(last-child) {
+			margin-right: 2.5rem;
+
+			@media screen and (max-width: 900px) {
+				margin-right: 0;
+				margin-bottom: 5vh;
+			}
+		}
 	}
+
+	&__item
 
 	&__link {
 		@extend %a;
@@ -43,5 +70,9 @@
 				height: 3px;
 			}
 		}
+	}
+
+	&.active {
+		transform: translateX(0);
 	}
 }

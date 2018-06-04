@@ -4,4 +4,16 @@
 	.wrapper {
 		padding: 7rem 3rem 0 3rem;
 	}
+
+	.distance-time {
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+}
+
+#map {
+	height: 50vh;
+	box-shadow: 0 7px 10px -5px rgba(0, 0, 0, .4);
+	margin-top: 2rem;
+	margin-bottom: 4rem;
 }

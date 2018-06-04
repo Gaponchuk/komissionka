@@ -10,7 +10,7 @@
 	<section class="location-header">
 		<div class="wrapper">
 			<header class="header">
-				<a href="" class="logo">
+				<a href="index.html" class="logo">
 					<span class="logo__title">Некрасова 26</span>
 					<span class="logo__description">Комиссионный магазин</span>
 				</a>
@@ -23,9 +23,9 @@
 					</ul>
 				</nav>
 				<div class="btn-nav">
-					<span></span>
-					<span></span>
-					<span></span>
+					<span class="btn-nav__item btn-nav__item--top"></span>
+					<span class="btn-nav__item btn-nav__item--center"></span>
+					<span class="btn-nav__item btn-nav__item--bottom"></span>
 				</div>
 			</header>
 		</div>
@@ -33,11 +33,9 @@
 	<section class="location-info">
 		<div class="wrapper">
 			<h2 class="title-h2">Нас найти очень просто</h2>
-			<p>От станций метро «Маяковская», «Площадь Восстания»:</p>
-			<div class="map-block map-block--1"></div>
-			<p>Или «Чернышевская» – 10 минут пешком:</p>
-			<div class="map-block map-block--2"></div>
+			<p>От станций метро «Маяковская», «Площадь Восстания» или «Чернышевская» – <span class="distance-time">10 минут</span> пешком.</p>
 		</div>
+		<div id="map"></div>
 	</section>
 	<footer class="footer">
 		<div class="wrapper">
@@ -57,5 +55,9 @@
 		</div>
 	</footer>
 
-
+<script src="js/javascript.js"></script>
+<script src="js/map.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGD-Yk45TNZ_8xnoH4A5mIpPzEMKE3LYo&callback=initMap">
+</script>
 </body>
