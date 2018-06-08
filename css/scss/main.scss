@@ -98,3 +98,57 @@ body {
 		text-decoration: underline;
 	}
 }
+
+#rules:target {
+	padding: 1rem;
+	background-color: darken($slider-btn-bg, 10%);
+	border-radius: 1rem;
+}
+
+.btn-top {
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	right: 1rem;
+	bottom: 3rem;
+	width: 4rem;
+	height: 4rem;
+	border-radius: .5rem;
+	background-color: darken($slider-btn-bg, 10%);
+	transition: all .3s ease;
+
+	&:hover {
+		background-color: darken($slider-btn-bg, 25%);
+		border-radius: 50%;
+	}
+
+	&::before,
+	&::after {
+		position: absolute;
+		content: "";
+		left: 50%;
+	}
+
+	&::before {
+		width: 1.5rem;
+		height: 1.5rem;
+		top: 10px;
+		border-style: solid;
+		border-width: 0 .3rem .3rem 0;
+		border-color: #fff;
+		transform: translate(-50%, 0) rotate(-135deg);
+	}
+
+	&::after {
+		width: .3rem;
+		height: 2rem;
+		top: 50%;
+		transform: translate(-50%, -45%);
+		background-color: #fff;
+	}
+
+	&.activ-up {
+		visibility: visible;
+		opacity: 1;
+	}
+}
